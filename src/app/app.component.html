@@ -1,3 +1,9 @@
+<app-banner [selectedCategory]="selectedCategory"></app-banner>
+
 <h1>
   {{title}}
 </h1>
+<router-outlet></router-outlet>
+<!--<app-representatives *ngIf="selectedCategory === 'representatives'"></app-representatives>-->
+<!--<app-bills *ngIf="selectedCategory === 'bills'"></app-bills>-->
+

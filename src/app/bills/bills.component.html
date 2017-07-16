@@ -1,0 +1,13 @@
+<div class="container">
+  <ul class="nav nav-tabs">
+    <li (click)= "tabChange('all');" role="presentation" class="{{activeTab === 'all' ? 'active' : ''}}"><a class="{{activeTab === 'all' ? 'active' : ''}}" href="#">All</a></li>
+    <li (click)= "tabChange('location');" role="presentation" class="{{activeTab === 'location' ? 'active' : ''}}"><a class="{{activeTab === 'location' ? 'active' : ''}}" href="#">Charlotte</a></li>
+    <li (click)= "tabChange('house');" role="presentation" class="{{activeTab === 'house' ? 'active' : ''}}"><a class="{{activeTab === 'house' ? 'active' : ''}}" href="#">House</a></li>
+    <li (click)= "tabChange('governor');" role="presentation" class="{{activeTab === 'governor' ? 'active' : ''}}"><a class="{{activeTab === 'governor' ? 'active' : ''}}" href="#">Governor</a></li>
+    <li (click)= "tabChange('advanced_search');" role="presentation" class="{{activeTab === 'advanced_search' ? 'active' : ''}}"><a class="{{activeTab === 'advanced_search' ? 'active' : ''}}" href="#">Advanced Search</a></li>
+  </ul>
+
+  <app-bill-location *ngIf="section === 'all' || section === 'location'"></app-bill-location>
+  <app-bill-house *ngIf="section === 'all' || section === 'house'"></app-bill-house>
+  <app-bill-governor *ngIf="section === 'all' || section === 'governor'"></app-bill-governor>
+</div>

@@ -1,0 +1,12 @@
+<div class="container">
+  <ul class="nav nav-tabs">
+    <li (click)= "tabChange('all');" role="presentation" class="{{activeTab === 'all' ? 'active' : ''}}"><a class="{{activeTab === 'all' ? 'active' : ''}}" href="#">All</a></li>
+    <li (click)= "tabChange('location');" role="presentation" class="{{activeTab === 'location' ? 'active' : ''}}"><a class="{{activeTab === 'location' ? 'active' : ''}}" href="#">Charlotte</a></li>
+    <li (click)= "tabChange('house');" role="presentation" class="{{activeTab === 'house' ? 'active' : ''}}"><a class="{{activeTab === 'house' ? 'active' : ''}}" href="#">House</a></li>
+    <li (click)= "tabChange('governor');" role="presentation" class="{{activeTab === 'governor' ? 'active' : ''}}"><a class="{{activeTab === 'governor' ? 'active' : ''}}" href="#">Governor</a></li>
+    <li (click)= "tabChange('advanced_search');" role="presentation" class="{{activeTab === 'advanced_search' ? 'active' : ''}}"><a class="{{activeTab === 'advanced_search' ? 'active' : ''}}" href="#">Advanced Search</a></li>
+  </ul>
+  <app-rep-location *ngIf="activeTab === 'all' || activeTab === 'location'"></app-rep-location>
+  <app-rep-house *ngIf="activeTab === 'all' || activeTab === 'house'"></app-rep-house>
+  <app-rep-governor *ngIf="activeTab === 'all' || activeTab === 'governor'"></app-rep-governor>
+</div>

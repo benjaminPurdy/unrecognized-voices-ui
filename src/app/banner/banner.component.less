@@ -1,0 +1,76 @@
+.navbar {
+    position: relative;
+    .navbar-inner {
+        .brand {
+            position: absolute;
+            left: 50%;
+            margin-left: -33px;
+            padding: 10px;
+            #logo img {
+                width: 46px;
+                height: 46px;
+            }
+        }
+        .nav {
+            a {
+                float: none;
+                padding: 9px 10px 11px;
+                line-height: 19px;
+                color: #999999;
+                text-decoration: none;
+                text-shadow: none;
+                &.no-btn {
+                    margin: 8px 5px;
+                    font-size: 16px;
+                    font-weight: 600;
+                    color: white;
+                    transition: all 0.3s ease;
+                }
+
+            }
+            .signin .btn {
+                color: white;
+                border: 2px solid white;
+            }
+            a.no-btn:hover {
+                background: rgba(255,255,255,0.15);
+            }
+            .signin .btn:hover {
+                color: #333;
+                background: white;
+            }
+            li {
+                position: relative;
+                display: block;
+                float: left;
+            }
+        }
+        .global_search {
+            margin: 11px 10px;
+            .icon-search-light {
+                width: 20px;
+                height: auto;
+                margin-right: 5px;
+                margin-top: 5px;
+            }
+            .search_goals {
+              background: none;
+              border-radious: none;
+              border: none;
+              input {
+                color: white;
+                font-size: 17px;
+                font-weight: 700;
+                width: 250px;
+                padding: 4px 5px 3px 4px;
+                -webkit-transition: width 0.2s ease-in-out;
+                -moz-transition: width 0.2s ease-in-out;
+                -o-transition: width 0.2s ease-in-out;
+                transition: width 0.2s ease-in-out;
+                background: none;
+                border: none;
+              }
+            }
+        }
+    }
+}
